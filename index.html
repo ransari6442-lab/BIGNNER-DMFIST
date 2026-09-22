@@ -1,0 +1,440 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BiggneRs Trade - Limited Offer Now</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    >
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 10px;
+            color: #ffffff;
+
+            background-color: #030d07;
+            background-image:
+                radial-gradient(
+                    circle at 50% 0%,
+                    #0d381e 0%,
+                    transparent 75%
+                ),
+                radial-gradient(
+                    circle at 50% 100%,
+                    #051a0e 0%,
+                    transparent 80%
+                );
+        }
+
+        /* Main Card */
+        .card-container {
+            width: 100%;
+            max-width: 440px;
+            padding: 24px 18px;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+
+            background: linear-gradient(
+                165deg,
+                #072213 0%,
+                #031209 100%
+            );
+
+            border: 2px solid #235435;
+            border-radius: 28px;
+
+            box-shadow:
+                0 20px 50px rgba(0, 0, 0, 0.8),
+                0 0 25px rgba(16, 185, 129, 0.15);
+        }
+
+        .card-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+
+            background: linear-gradient(
+                90deg,
+                transparent,
+                #fbbf24,
+                transparent
+            );
+        }
+
+        /* Logo */
+        .logo-box {
+            width: 72px;
+            height: 72px;
+            margin: 0 auto 12px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: linear-gradient(
+                135deg,
+                #fff3d1 0%,
+                #e2b245 50%,
+                #996e13 100%
+            );
+
+            border-radius: 18px;
+
+            font-size: 38px;
+            font-weight: 900;
+            color: #000;
+
+            box-shadow:
+                0 6px 18px rgba(0, 0, 0, 0.4),
+                inset 0 2px 4px rgba(255, 255, 255, 0.8);
+        }
+
+        /* Title */
+        .title {
+            margin-bottom: 8px;
+            font-size: 27px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .title .gold {
+            color: #fcd34d;
+            text-shadow: 0 0 12px rgba(252, 211, 77, 0.3);
+        }
+
+        .title .white {
+            color: #f3f4f6;
+        }
+
+        /* Limited Offer */
+        .offer-tag {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+
+            margin-bottom: 14px;
+            padding: 4px 14px;
+
+            background: rgba(239, 68, 68, 0.15);
+            border: 1px solid rgba(239, 68, 68, 0.4);
+            border-radius: 20px;
+
+            color: #ef4444;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+
+            animation: pulse-border 2s infinite;
+        }
+
+        @keyframes pulse-border {
+            0%,
+            100% {
+                border-color: rgba(239, 68, 68, 0.4);
+                box-shadow: 0 0 0 rgba(239, 68, 68, 0);
+            }
+
+            50% {
+                border-color: rgba(239, 68, 68, 0.8);
+                box-shadow: 0 0 10px rgba(239, 68, 68, 0.3);
+            }
+        }
+
+        /* Support Badge */
+        .pill-badge {
+            display: inline-block;
+
+            margin-bottom: 16px;
+            padding: 5px 20px;
+
+            background: rgba(5, 150, 105, 0.1);
+            border: 1.5px solid #059669;
+            border-radius: 20px;
+
+            color: #34d399;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        /* Hero Heading */
+        .hero-heading {
+            margin-bottom: 18px;
+
+            font-size: 21px;
+            font-weight: 900;
+            line-height: 1.25;
+            text-transform: uppercase;
+        }
+
+        .hero-heading .highlight {
+            color: #fbbf24;
+            text-shadow: 0 0 15px rgba(251, 191, 36, 0.4);
+        }
+
+        /* Feature Card */
+        .feature-card {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            margin-bottom: 22px;
+            padding: 16px 12px;
+
+            background: rgba(6, 36, 19, 0.7);
+            border: 1px solid #164e2a;
+            border-radius: 16px;
+
+            text-decoration: none;
+
+            transition:
+                border-color 0.3s ease,
+                transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            border-color: #10b981;
+            transform: translateY(-2px);
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .feature-item i {
+            font-size: 18px;
+        }
+
+        .icon-live {
+            color: #60a5fa;
+        }
+
+        .icon-cash {
+            color: #fbbf24;
+        }
+
+        .icon-gift {
+            color: #f87171;
+        }
+
+        /* Telegram Button */
+        .btn-red-animated {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            width: 100%;
+            padding: 16px 10px;
+
+            position: relative;
+            overflow: hidden;
+
+            background: linear-gradient(
+                135deg,
+                #ff1a1a 0%,
+                #e60000 50%,
+                #990000 100%
+            );
+
+            border: 1px solid #ff6666;
+            border-radius: 40px;
+
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 900;
+            letter-spacing: 0.5px;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            box-shadow:
+                0 8px 25px rgba(230, 0, 0, 0.5),
+                inset 0 2px 2px rgba(255, 255, 255, 0.4);
+
+            animation: pulse-red 1.5s infinite alternate;
+        }
+
+        .btn-red-animated::after {
+            content: "";
+
+            position: absolute;
+            top: -50%;
+            left: -60%;
+
+            width: 40%;
+            height: 200%;
+
+            background: rgba(255, 255, 255, 0.35);
+
+            transform: rotate(25deg);
+
+            animation: shimmer 2.2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% {
+                left: -60%;
+            }
+
+            100% {
+                left: 140%;
+            }
+        }
+
+        @keyframes pulse-red {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 6px 20px rgba(230, 0, 0, 0.5);
+            }
+
+            100% {
+                transform: scale(1.03);
+                box-shadow:
+                    0 12px 30px rgba(255, 0, 0, 0.8),
+                    0 0 15px rgba(255, 50, 50, 0.6);
+            }
+        }
+
+        .btn-red-animated i {
+            position: relative;
+            z-index: 2;
+
+            font-size: 20px;
+
+            animation: plane-bounce 1s infinite alternate;
+        }
+
+        .btn-red-animated {
+            z-index: 1;
+        }
+
+        .btn-red-animated::after {
+            z-index: 1;
+        }
+
+        @keyframes plane-bounce {
+            0% {
+                transform: translateY(0) translateX(0);
+            }
+
+            100% {
+                transform: translateY(-3px) translateX(3px);
+            }
+        }
+
+        /* Online Counter */
+        .members-online {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+
+            margin-top: 14px;
+
+            color: #9ca3af;
+            font-size: 11px;
+        }
+
+        .green-dot {
+            width: 8px;
+            height: 8px;
+
+            flex-shrink: 0;
+
+            background-color: #10b981;
+            border-radius: 50%;
+
+            box-shadow: 0 0 8px #10b981;
+
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0.3;
+            }
+        }
+
+        /* Toast Notification */
+        .toast-notification {
+            position: fixed;
+            bottom: 15px;
+            left: 50%;
+
+            width: 90%;
+            max-width: 360px;
+
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            padding: 10px 16px;
+
+            background: rgba(10, 25, 16, 0.95);
+            border: 1px solid #10b981;
+            border-radius: 30px;
+
+            backdrop-filter: blur(8px);
+
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+
+            transform: translateX(-50%) translateY(100px);
+            opacity: 0;
+
+            transition:
+                transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+                opacity 0.5s ease;
+
+            z-index: 999;
+        }
+
+        .toast-notification.show {
+            transform: translateX(-50%) translateY(0);
+            opacity: 1;
+        }
+
+        .toast-icon {
+            width: 32px;
+            height: 32px;
+
+            flex-shrink: 
+```
