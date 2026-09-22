@@ -423,7 +423,7 @@
 
     const liveCountEl = document.getElementById('live-count');
     setInterval(() => {
-        let current = parseInt(liveCountEl.textContent.replace(/,/g, ''));
+        let current = parseInt(liveCountEl.textContent.replace(/,/g, ''), 10);
         let change = Math.floor(Math.random() * 7) - 3;
         liveCountEl.textContent = (current + change).toLocaleString('en-IN');
     }, 3000);
