@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BiggneRs Trade - Limited Offer Now</title>
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
+    
+    <!-- Google Fonts & Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <style>
         * {
             margin: 0;
@@ -148,6 +151,11 @@
             flex-direction: column;
             gap: 12px;
             text-decoration: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .feature-card:hover {
+            border-color: #10b981;
         }
 
         .feature-item {
@@ -247,7 +255,7 @@
             50% { opacity: 0.3; }
         }
 
-        /* Dynamic Popups (Phone + Telegram) */
+        /* Dynamic Popups */
         .toast-notification {
             position: fixed;
             bottom: 15px;
@@ -309,121 +317,117 @@
 </head>
 <body>
 
-    <!-- Main Card Container -->
-    <div class="card-container">
-        <!-- Logo -->
-        <div class="logo-box">B</div>
+<!-- Main Card Container -->
+<div class="card-container">
+    <!-- Logo -->
+    <div class="logo-box">B</div>
 
-        <!-- Title -->
-        <h1 class="title">
-            <span class="gold">BiggneRs</span> <span class="white">Trade</span>
-        </h1>
+    <!-- Title -->
+    <h1 class="title">
+        <span class="gold">BiggneRs</span> <span class="white">Trade</span>
+    </h1>
 
-        <!-- Subtitle Replacement -->
-        <div>
-            <span class="offer-tag">
-                <i class="fa-solid fa-fire"></i> Limited Offer Now <i class="fa-solid fa-fire"></i>
-            </span>
-        </div>
-
-        <div>
-            <span class="pill-badge">LIVE SUPPORT</span>
-        </div>
-
-        <!-- Main Headline -->
-        <h2 class="hero-heading">
-            BEST <span class="highlight">PREDICTION</span> ON LIVE
-        </h2>
-
-        <!-- Feature List -->
-        <a href="https://t.me/+khjZCyvU7QVkNzk9" target="_blank" class="feature-card">
-            <div class="feature-item">
-                <i class="fa-solid fa-comments icon-live"></i>
-                <span>Live Support</span>
-            </div>
-            <div class="feature-item">
-                <i class="fa-solid fa-sack-dollar icon-cash"></i>
-                <span>Cashback Offer</span>
-            </div>
-            <div class="feature-item">
-                <i class="fa-solid fa-gift icon-gift"></i>
-                <span>Gift Code</span>
-            </div>
-        </a>
-
-        <!-- Red Animated Telegram Button -->
-        <a href="https://t.me/+khjZCyvU7QVkNzk9" target="_blank" class="btn-red-animated">
-            <i class="fa-solid fa-paper-plane"></i> JOIN TELEGRAM
-        </a>
-
-        <!-- Online Counter -->
-        <div class="members-online">
-            <span class="green-dot"></span>
-            <span id="live-count">18,429</span> members online right now
-        </div>
+    <!-- Subtitle Replacement -->
+    <div>
+        <span class="offer-tag">
+            <i class="fa-solid fa-fire"></i> Limited Offer Now <i class="fa-solid fa-fire"></i>
+        </span>
     </div>
 
-    <!-- Animated Dynamic Popups -->
-    <div id="toast-popup" class="toast-notification">
-        <div id="toast-badge" class="toast-icon telegram">
-            <i id="toast-icon-i" class="fa-brands fa-telegram"></i>
-        </div>
-        <div class="toast-content">
-            <div id="toast-user" class="toast-title">Rahul M.</div>
-            <div id="toast-action" class="toast-desc">Joined Telegram Channel</div>
-        </div>
+    <div>
+        <span class="pill-badge">LIVE SUPPORT</span>
     </div>
 
-    <script>
-        // Array of dynamic events (Telegram joins & Phone Claims)
-        const notifications = [
-            { type: 'telegram', icon: 'fa-brands fa-telegram', title: 'Aman Sharma', action: 'Joined Telegram Channel' },
-            { type: 'phone', icon: 'fa-solid fa-phone', title: '+91 98*** *4210', action: 'Claimed ₹500 Cashback Offer!' },
-            { type: 'telegram', icon: 'fa-brands fa-telegram', title: 'Vikram Singh', action: 'Joined Telegram Channel' },
-            { type: 'phone', icon: 'fa-solid fa-mobile-screen-button', title: '+91 87*** *1105', action: 'Claimed VIP Gift Code!' },
-            { type: 'telegram', icon: 'fa-brands fa-telegram', title: 'Pooja Verma', action: 'Joined Telegram Channel' },
-            { type: 'phone', icon: 'fa-solid fa-phone', title: '+91 70*** *8892', action: 'Claimed ₹1,000 Special Bonus!' },
-            { type: 'telegram', icon: 'fa-brands fa-telegram', title: 'Rajesh Kumar', action: 'Joined Telegram Channel' },
-            { type: 'phone', icon: 'fa-solid fa-gift', title: '+91 91*** *3021', action: 'Claimed Free Prediction Access!' }
-        ];
+    <!-- Main Headline -->
+    <h2 class="hero-heading">
+        BEST <span class="highlight">PREDICTION</span> ON LIVE
+    </h2>
 
-        let notifIndex = 0;
-        const toast = document.getElementById('toast-popup');
-        const toastBadge = document.getElementById('toast-badge');
-        const toastIconI = document.getElementById('toast-icon-i');
-        const toastUser = document.getElementById('toast-user');
-        const toastAction = document.getElementById('toast-action');
+    <!-- Feature List -->
+    <a href="https://t.me/+khjZCyvU7QVkNzk9" target="_blank" rel="noopener noreferrer" class="feature-card">
+        <div class="feature-item">
+            <i class="fa-solid fa-comments icon-live"></i>
+            <span>Live Support</span>
+        </div>
+        <div class="feature-item">
+            <i class="fa-solid fa-sack-dollar icon-cash"></i>
+            <span>Cashback Offer</span>
+        </div>
+        <div class="feature-item">
+            <i class="fa-solid fa-gift icon-gift"></i>
+            <span>Gift Code</span>
+        </div>
+    </a>
 
-        function showNotification() {
-            const data = notifications[notifIndex];
-            
-            toastUser.textContent = data.title;
-            toastAction.textContent = data.action;
-            toastIconI.className = data.icon;
-            
-            // Set badge color class
-            toastBadge.className = 'toast-icon ' + (data.type === 'telegram' ? 'telegram' : 'phone');
+    <!-- Red Animated Telegram Button -->
+    <a href="https://t.me/+khjZCyvU7QVkNzk9" target="_blank" rel="noopener noreferrer" class="btn-red-animated">
+        <i class="fa-solid fa-paper-plane"></i> JOIN TELEGRAM
+    </a>
 
-            toast.classList.add('show');
+    <!-- Online Counter -->
+    <div class="members-online">
+        <span class="green-dot"></span>
+        <span id="live-count">18,429</span> members online right now
+    </div>
+</div>
 
-            setTimeout(() => {
-                toast.classList.remove('show');
-            }, 3200);
+<!-- Animated Dynamic Popups -->
+<div id="toast-popup" class="toast-notification">
+    <div id="toast-badge" class="toast-icon telegram">
+        <i id="toast-icon-i" class="fa-brands fa-telegram"></i>
+    </div>
+    <div class="toast-content">
+        <div id="toast-user" class="toast-title">Rahul M.</div>
+        <div id="toast-action" class="toast-desc">Joined Telegram Channel</div>
+    </div>
+</div>
 
-            notifIndex = (notifIndex + 1) % notifications.length;
-        }
+<script>
+    const notifications = [
+        { type: 'telegram', icon: 'fa-brands fa-telegram', title: 'Aman Sharma', action: 'Joined Telegram Channel' },
+        { type: 'phone', icon: 'fa-solid fa-phone', title: '+91 98*** *4210', action: 'Claimed ₹500 Cashback Offer!' },
+        { type: 'telegram', icon: 'fa-brands fa-telegram', title: 'Vikram Singh', action: 'Joined Telegram Channel' },
+        { type: 'gift', icon: 'fa-solid fa-gift', title: '+91 87*** *1105', action: 'Claimed VIP Gift Code!' },
+        { type: 'telegram', icon: 'fa-brands fa-telegram', title: 'Pooja Verma', action: 'Joined Telegram Channel' },
+        { type: 'phone', icon: 'fa-solid fa-phone', title: '+91 70*** *8892', action: 'Claimed ₹1,000 Special Bonus!' },
+        { type: 'telegram', icon: 'fa-brands fa-telegram', title: 'Rajesh Kumar', action: 'Joined Telegram Channel' },
+        { type: 'gift', icon: 'fa-solid fa-gift', title: '+91 91*** *3021', action: 'Claimed Free Prediction Access!' }
+    ];
 
-        // Trigger notifications periodically
-        setInterval(showNotification, 5500);
-        setTimeout(showNotification, 1500);
+    let notifIndex = 0;
+    const toast = document.getElementById('toast-popup');
+    const toastBadge = document.getElementById('toast-badge');
+    const toastIconI = document.getElementById('toast-icon-i');
+    const toastUser = document.getElementById('toast-user');
+    const toastAction = document.getElementById('toast-action');
 
-        // Fluctuate member counter slightly for realism
-        const liveCountEl = document.getElementById('live-count');
-        setInterval(() => {
-            let current = parseInt(liveCountEl.textContent.replace(',', ''));
-            let change = Math.floor(Math.random() * 7) - 3;
-            liveCountEl.textContent = (current + change).toLocaleString();
-        }, 3000);
-    </script>
+    function showNotification() {
+        const data = notifications[notifIndex];
+        
+        toastUser.textContent = data.title;
+        toastAction.textContent = data.action;
+        toastIconI.className = data.icon;
+        toastBadge.className = 'toast-icon ' + data.type;
+
+        toast.classList.add('show');
+
+        setTimeout(() => {
+            toast.classList.remove('show');
+        }, 3200);
+
+        notifIndex = (notifIndex + 1) % notifications.length;
+    }
+
+    setInterval(showNotification, 5500);
+    setTimeout(showNotification, 1500);
+
+    const liveCountEl = document.getElementById('live-count');
+    setInterval(() => {
+        let current = parseInt(liveCountEl.textContent.replace(/,/g, ''));
+        let change = Math.floor(Math.random() * 7) - 3;
+        liveCountEl.textContent = (current + change).toLocaleString('en-IN');
+    }, 3000);
+</script>
+
 </body>
 </html>
