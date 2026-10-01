@@ -3,14 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>BiggneRs Trade - Limited Offer Now</title>
-    
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '2627682807688096');
+    fbq('track', 'PageView');
+    </script>
+
+    <noscript>
+        <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=2627682807688096&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
     <!-- Google Fonts & Font Awesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
         * {
             margin: 0;
@@ -22,7 +48,7 @@
 
         body {
             background-color: #030d07;
-            background-image: 
+            background-image:
                 radial-gradient(circle at 50% 0%, #0d381e 0%, transparent 75%),
                 radial-gradient(circle at 50% 100%, #051a0e 0%, transparent 80%);
             min-height: 100vh;
@@ -41,8 +67,9 @@
             border: 2px solid #235435;
             border-radius: 28px;
             padding: 24px 18px;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 
-                        0 0 25px rgba(16, 185, 129, 0.15);
+            box-shadow:
+                0 20px 50px rgba(0, 0, 0, 0.8),
+                0 0 25px rgba(16, 185, 129, 0.15);
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -55,14 +82,24 @@
             left: 0;
             right: 0;
             height: 3px;
-            background: linear-gradient(90deg, transparent, #fbbf24, transparent);
+            background: linear-gradient(
+                90deg,
+                transparent,
+                #fbbf24,
+                transparent
+            );
         }
 
         /* Logo Branding */
         .logo-box {
             width: 72px;
             height: 72px;
-            background: linear-gradient(135deg, #fff3d1 0%, #e2b245 50%, #996e13 100%);
+            background: linear-gradient(
+                135deg,
+                #fff3d1 0%,
+                #e2b245 50%,
+                #996e13 100%
+            );
             border-radius: 18px;
             margin: 0 auto 12px;
             display: flex;
@@ -71,7 +108,9 @@
             font-size: 38px;
             font-weight: 900;
             color: #000;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.4), inset 0 2px 4px rgba(255,255,255,0.8);
+            box-shadow:
+                0 6px 18px rgba(0,0,0,0.4),
+                inset 0 2px 4px rgba(255,255,255,0.8);
         }
 
         .title {
@@ -109,8 +148,15 @@
         }
 
         @keyframes pulse-border {
-            0%, 100% { border-color: rgba(239, 68, 68, 0.4); box-shadow: 0 0 0 rgba(239, 68, 68, 0); }
-            50% { border-color: rgba(239, 68, 68, 0.8); box-shadow: 0 0 10px rgba(239, 68, 68, 0.3); }
+            0%, 100% {
+                border-color: rgba(239, 68, 68, 0.4);
+                box-shadow: 0 0 0 rgba(239, 68, 68, 0);
+            }
+
+            50% {
+                border-color: rgba(239, 68, 68, 0.8);
+                box-shadow: 0 0 10px rgba(239, 68, 68, 0.3);
+            }
         }
 
         .pill-badge {
@@ -172,9 +218,17 @@
             font-size: 18px;
         }
 
-        .icon-live { color: #60a5fa; }
-        .icon-cash { color: #fbbf24; }
-        .icon-gift { color: #f87171; }
+        .icon-live {
+            color: #60a5fa;
+        }
+
+        .icon-cash {
+            color: #fbbf24;
+        }
+
+        .icon-gift {
+            color: #f87171;
+        }
 
         /* Animated Red Telegram Button */
         .btn-red-animated {
@@ -183,7 +237,12 @@
             justify-content: center;
             gap: 10px;
             width: 100%;
-            background: linear-gradient(135deg, #ff1a1a 0%, #e60000 50%, #990000 100%);
+            background: linear-gradient(
+                135deg,
+                #ff1a1a 0%,
+                #e60000 50%,
+                #990000 100%
+            );
             color: #ffffff;
             font-size: 18px;
             font-weight: 900;
@@ -192,7 +251,9 @@
             border-radius: 40px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            box-shadow: 0 8px 25px rgba(230, 0, 0, 0.5), inset 0 2px 2px rgba(255,255,255,0.4);
+            box-shadow:
+                0 8px 25px rgba(230, 0, 0, 0.5),
+                inset 0 2px 2px rgba(255,255,255,0.4);
             position: relative;
             overflow: hidden;
             border: 1px solid #ff6666;
@@ -212,13 +273,27 @@
         }
 
         @keyframes shimmer {
-            0% { left: -60%; }
-            100% { left: 140%; }
+            0% {
+                left: -60%;
+            }
+
+            100% {
+                left: 140%;
+            }
         }
 
         @keyframes pulse-red {
-            0% { transform: scale(1); box-shadow: 0 6px 20px rgba(230, 0, 0, 0.5); }
-            100% { transform: scale(1.03); box-shadow: 0 12px 30px rgba(255, 0, 0, 0.8), 0 0 15px rgba(255, 50, 50, 0.6); }
+            0% {
+                transform: scale(1);
+                box-shadow: 0 6px 20px rgba(230, 0, 0, 0.5);
+            }
+
+            100% {
+                transform: scale(1.03);
+                box-shadow:
+                    0 12px 30px rgba(255, 0, 0, 0.8),
+                    0 0 15px rgba(255, 50, 50, 0.6);
+            }
         }
 
         .btn-red-animated i {
@@ -227,8 +302,13 @@
         }
 
         @keyframes plane-bounce {
-            0% { transform: translateY(0) translateX(0); }
-            100% { transform: translateY(-3px) translateX(3px); }
+            0% {
+                transform: translateY(0) translateX(0);
+            }
+
+            100% {
+                transform: translateY(-3px) translateX(3px);
+            }
         }
 
         /* Member Count Indicator */
@@ -252,7 +332,9 @@
         }
 
         @keyframes blink {
-            50% { opacity: 0.3; }
+            50% {
+                opacity: 0.3;
+            }
         }
 
         /* Dynamic Popups */
@@ -270,7 +352,8 @@
             align-items: center;
             gap: 10px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.6);
-            transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            transition:
+                all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
             opacity: 0;
             z-index: 999;
             width: 90%;
@@ -294,9 +377,17 @@
             flex-shrink: 0;
         }
 
-        .toast-icon.telegram { background: #229ed9; }
-        .toast-icon.phone { background: #f59e0b; }
-        .toast-icon.gift { background: #ef4444; }
+        .toast-icon.telegram {
+            background: #229ed9;
+        }
+
+        .toast-icon.phone {
+            background: #f59e0b;
+        }
+
+        .toast-icon.gift {
+            background: #ef4444;
+        }
 
         .toast-content {
             text-align: left;
@@ -313,121 +404,285 @@
             color: #10b981;
             font-weight: 600;
         }
+
+        /* Mobile */
+        @media (max-width: 480px) {
+            body {
+                padding: 10px 8px;
+            }
+
+            .card-container {
+                padding: 22px 15px;
+                border-radius: 24px;
+            }
+
+            .title {
+                font-size: 25px;
+            }
+
+            .hero-heading {
+                font-size: 19px;
+            }
+
+            .btn-red-animated {
+                font-size: 17px;
+            }
+        }
     </style>
 </head>
+
 <body>
 
-<!-- Main Card Container -->
-<div class="card-container">
-    <!-- Logo -->
-    <div class="logo-box">B</div>
+    <!-- Main Card Container -->
+    <div class="card-container">
 
-    <!-- Title -->
-    <h1 class="title">
-        <span class="gold">BiggneRs</span> <span class="white">Trade</span>
-    </h1>
+        <!-- Logo -->
+        <div class="logo-box">B</div>
 
-    <!-- Subtitle Replacement -->
-    <div>
-        <span class="offer-tag">
-            <i class="fa-solid fa-fire"></i> Limited Offer Now <i class="fa-solid fa-fire"></i>
-        </span>
-    </div>
+        <!-- Title -->
+        <h1 class="title">
+            <span class="gold">BiggneRs</span>
+            <span class="white">Trade</span>
+        </h1>
 
-    <div>
-        <span class="pill-badge">LIVE SUPPORT</span>
-    </div>
-
-    <!-- Main Headline -->
-    <h2 class="hero-heading">
-        BEST <span class="highlight">PREDICTION</span> ON LIVE
-    </h2>
-
-    <!-- Feature List -->
-    <a href="https://t.me/+khjZCyvU7QVkNzk9" target="_blank" rel="noopener noreferrer" class="feature-card">
-        <div class="feature-item">
-            <i class="fa-solid fa-comments icon-live"></i>
-            <span>Live Support</span>
+        <!-- Limited Offer -->
+        <div>
+            <span class="offer-tag">
+                <i class="fa-solid fa-fire"></i>
+                Limited Offer Now
+                <i class="fa-solid fa-fire"></i>
+            </span>
         </div>
-        <div class="feature-item">
-            <i class="fa-solid fa-sack-dollar icon-cash"></i>
-            <span>Cashback Offer</span>
+
+        <!-- Support Badge -->
+        <div>
+            <span class="pill-badge">LIVE SUPPORT</span>
         </div>
-        <div class="feature-item">
-            <i class="fa-solid fa-gift icon-gift"></i>
-            <span>Gift Code</span>
+
+        <!-- Main Headline -->
+        <h2 class="hero-heading">
+            BEST <span class="highlight">PREDICTION</span> ON LIVE
+        </h2>
+
+        <!-- Feature List -->
+        <a href="https://t.me/+khjZCyvU7QVkNzk9"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="feature-card">
+
+            <div class="feature-item">
+                <i class="fa-solid fa-comments icon-live"></i>
+                <span>Live Support</span>
+            </div>
+
+            <div class="feature-item">
+                <i class="fa-solid fa-sack-dollar icon-cash"></i>
+                <span>Cashback Offer</span>
+            </div>
+
+            <div class="feature-item">
+                <i class="fa-solid fa-gift icon-gift"></i>
+                <span>Gift Code</span>
+            </div>
+
+        </a>
+
+        <!-- Red Animated Telegram Button -->
+        <!-- Subscribe event tracked on click -->
+        <a href="https://t.me/+khjZCyvU7QVkNzk9"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn-red-animated"
+           onclick="trackSubscribe(event)">
+
+            <i class="fa-solid fa-paper-plane"></i>
+            JOIN TELEGRAM
+
+        </a>
+
+        <!-- Online Counter -->
+        <div class="members-online">
+            <span class="green-dot"></span>
+            <span id="live-count">18,429</span>
+            members online right now
         </div>
-    </a>
 
-    <!-- Red Animated Telegram Button -->
-    <a href="https://t.me/+khjZCyvU7QVkNzk9" target="_blank" rel="noopener noreferrer" class="btn-red-animated">
-        <i class="fa-solid fa-paper-plane"></i> JOIN TELEGRAM
-    </a>
-
-    <!-- Online Counter -->
-    <div class="members-online">
-        <span class="green-dot"></span>
-        <span id="live-count">18,429</span> members online right now
     </div>
-</div>
 
-<!-- Animated Dynamic Popups -->
-<div id="toast-popup" class="toast-notification">
-    <div id="toast-badge" class="toast-icon telegram">
-        <i id="toast-icon-i" class="fa-brands fa-telegram"></i>
+    <!-- Animated Dynamic Popups -->
+    <div id="toast-popup" class="toast-notification">
+
+        <div id="toast-badge" class="toast-icon telegram">
+            <i id="toast-icon-i" class="fa-brands fa-telegram"></i>
+        </div>
+
+        <div class="toast-content">
+            <div id="toast-user" class="toast-title">
+                Rahul M.
+            </div>
+
+            <div id="toast-action" class="toast-desc">
+                Joined Telegram Channel
+            </div>
+        </div>
+
     </div>
-    <div class="toast-content">
-        <div id="toast-user" class="toast-title">Rahul M.</div>
-        <div id="toast-action" class="toast-desc">Joined Telegram Channel</div>
-    </div>
-</div>
 
-<script>
-    const notifications = [
-        { type: 'telegram', icon: 'fa-brands fa-telegram', title: 'Aman Sharma', action: 'Joined Telegram Channel' },
-        { type: 'phone', icon: 'fa-solid fa-phone', title: '+91 98*** *4210', action: 'Claimed ₹500 Cashback Offer!' },
-        { type: 'telegram', icon: 'fa-brands fa-telegram', title: 'Vikram Singh', action: 'Joined Telegram Channel' },
-        { type: 'gift', icon: 'fa-solid fa-gift', title: '+91 87*** *1105', action: 'Claimed VIP Gift Code!' },
-        { type: 'telegram', icon: 'fa-brands fa-telegram', title: 'Pooja Verma', action: 'Joined Telegram Channel' },
-        { type: 'phone', icon: 'fa-solid fa-phone', title: '+91 70*** *8892', action: 'Claimed ₹1,000 Special Bonus!' },
-        { type: 'telegram', icon: 'fa-brands fa-telegram', title: 'Rajesh Kumar', action: 'Joined Telegram Channel' },
-        { type: 'gift', icon: 'fa-solid fa-gift', title: '+91 91*** *3021', action: 'Claimed Free Prediction Access!' }
-    ];
+    <script>
+        /* ==========================================
+           META PIXEL - SUBSCRIBE TRACKING
+        ========================================== */
 
-    let notifIndex = 0;
-    const toast = document.getElementById('toast-popup');
-    const toastBadge = document.getElementById('toast-badge');
-    const toastIconI = document.getElementById('toast-icon-i');
-    const toastUser = document.getElementById('toast-user');
-    const toastAction = document.getElementById('toast-action');
+        function trackSubscribe(event) {
 
-    function showNotification() {
-        const data = notifications[notifIndex];
-        
-        toastUser.textContent = data.title;
-        toastAction.textContent = data.action;
-        toastIconI.className = data.icon;
-        toastBadge.className = 'toast-icon ' + data.type;
+            /*
+             * Send Subscribe event to Meta Pixel
+             */
+            if (typeof fbq === 'function') {
+                fbq('track', 'Subscribe');
+            }
 
-        toast.classList.add('show');
+            /*
+             * Do not block the Telegram link.
+             * The user is sent to Telegram normally.
+             */
+        }
 
-        setTimeout(() => {
-            toast.classList.remove('show');
-        }, 3200);
 
-        notifIndex = (notifIndex + 1) % notifications.length;
-    }
+        /* ==========================================
+           DYNAMIC NOTIFICATIONS
+        ========================================== */
 
-    setInterval(showNotification, 5500);
-    setTimeout(showNotification, 1500);
+        const notifications = [
 
-    const liveCountEl = document.getElementById('live-count');
-    setInterval(() => {
-        let current = parseInt(liveCountEl.textContent.replace(/,/g, ''), 10);
-        let change = Math.floor(Math.random() * 7) - 3;
-        liveCountEl.textContent = (current + change).toLocaleString('en-IN');
-    }, 3000);
-</script>
+            {
+                type: 'telegram',
+                icon: 'fa-brands fa-telegram',
+                title: 'Aman Sharma',
+                action: 'Joined Telegram Channel'
+            },
+
+            {
+                type: 'phone',
+                icon: 'fa-solid fa-phone',
+                title: '+91 98*** *4210',
+                action: 'Claimed ₹500 Cashback Offer!'
+            },
+
+            {
+                type: 'telegram',
+                icon: 'fa-brands fa-telegram',
+                title: 'Vikram Singh',
+                action: 'Joined Telegram Channel'
+            },
+
+            {
+                type: 'gift',
+                icon: 'fa-solid fa-gift',
+                title: '+91 87*** *1105',
+                action: 'Claimed VIP Gift Code!'
+            },
+
+            {
+                type: 'telegram',
+                icon: 'fa-brands fa-telegram',
+                title: 'Pooja Verma',
+                action: 'Joined Telegram Channel'
+            },
+
+            {
+                type: 'phone',
+                icon: 'fa-solid fa-phone',
+                title: '+91 70*** *8892',
+                action: 'Claimed ₹1,000 Special Bonus!'
+            },
+
+            {
+                type: 'telegram',
+                icon: 'fa-brands fa-telegram',
+                title: 'Rajesh Kumar',
+                action: 'Joined Telegram Channel'
+            },
+
+            {
+                type: 'gift',
+                icon: 'fa-solid fa-gift',
+                title: '+91 91*** *3021',
+                action: 'Claimed Free Prediction Access!'
+            }
+
+        ];
+
+
+        let notifIndex = 0;
+
+        const toast = document.getElementById('toast-popup');
+        const toastBadge = document.getElementById('toast-badge');
+        const toastIconI = document.getElementById('toast-icon-i');
+        const toastUser = document.getElementById('toast-user');
+        const toastAction = document.getElementById('toast-action');
+
+
+        function showNotification() {
+
+            const data = notifications[notifIndex];
+
+            toastUser.textContent = data.title;
+            toastAction.textContent = data.action;
+
+            toastIconI.className = data.icon;
+
+            toastBadge.className =
+                'toast-icon ' + data.type;
+
+            toast.classList.add('show');
+
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3200);
+
+            notifIndex =
+                (notifIndex + 1) % notifications.length;
+        }
+
+
+        /* Start notifications */
+        setInterval(showNotification, 5500);
+
+        setTimeout(showNotification, 1500);
+
+
+        /* ==========================================
+           LIVE MEMBER COUNTER
+        ========================================== */
+
+        const liveCountEl =
+            document.getElementById('live-count');
+
+
+        setInterval(() => {
+
+            let current =
+                parseInt(
+                    liveCountEl.textContent.replace(/,/g, ''),
+                    10
+                );
+
+            let change =
+                Math.floor(Math.random() * 7) - 3;
+
+            current += change;
+
+            if (current < 1) {
+                current = 1;
+            }
+
+            liveCountEl.textContent =
+                current.toLocaleString('en-IN');
+
+        }, 3000);
+
+    </script>
 
 </body>
 </html>
