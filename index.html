@@ -465,10 +465,7 @@
         </h2>
 
         <!-- Feature List -->
-        <a href="https://t.me/+khjZCyvU7QVkNzk9"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="feature-card">
+        <div class="feature-card">
 
             <div class="feature-item">
                 <i class="fa-solid fa-comments icon-live"></i>
@@ -485,7 +482,7 @@
                 <span>Gift Code</span>
             </div>
 
-        </a>
+        </div>
 
         <!-- Red Animated Telegram Button -->
         <!-- Subscribe event tracked on click -->
@@ -499,32 +496,6 @@
             JOIN TELEGRAM
 
         </a>
-
-        <!-- Online Counter -->
-        <div class="members-online">
-            <span class="green-dot"></span>
-            <span id="live-count">18,429</span>
-            members online right now
-        </div>
-
-    </div>
-
-    <!-- Animated Dynamic Popups -->
-    <div id="toast-popup" class="toast-notification">
-
-        <div id="toast-badge" class="toast-icon telegram">
-            <i id="toast-icon-i" class="fa-brands fa-telegram"></i>
-        </div>
-
-        <div class="toast-content">
-            <div id="toast-user" class="toast-title">
-                Rahul M.
-            </div>
-
-            <div id="toast-action" class="toast-desc">
-                Joined Telegram Channel
-            </div>
-        </div>
 
     </div>
 
@@ -548,139 +519,6 @@
              */
         }
 
-
-        /* ==========================================
-           DYNAMIC NOTIFICATIONS
-        ========================================== */
-
-        const notifications = [
-
-            {
-                type: 'telegram',
-                icon: 'fa-brands fa-telegram',
-                title: 'Aman Sharma',
-                action: 'Joined Telegram Channel'
-            },
-
-            {
-                type: 'phone',
-                icon: 'fa-solid fa-phone',
-                title: '+91 98*** *4210',
-                action: 'Claimed ₹500 Cashback Offer!'
-            },
-
-            {
-                type: 'telegram',
-                icon: 'fa-brands fa-telegram',
-                title: 'Vikram Singh',
-                action: 'Joined Telegram Channel'
-            },
-
-            {
-                type: 'gift',
-                icon: 'fa-solid fa-gift',
-                title: '+91 87*** *1105',
-                action: 'Claimed VIP Gift Code!'
-            },
-
-            {
-                type: 'telegram',
-                icon: 'fa-brands fa-telegram',
-                title: 'Pooja Verma',
-                action: 'Joined Telegram Channel'
-            },
-
-            {
-                type: 'phone',
-                icon: 'fa-solid fa-phone',
-                title: '+91 70*** *8892',
-                action: 'Claimed ₹1,000 Special Bonus!'
-            },
-
-            {
-                type: 'telegram',
-                icon: 'fa-brands fa-telegram',
-                title: 'Rajesh Kumar',
-                action: 'Joined Telegram Channel'
-            },
-
-            {
-                type: 'gift',
-                icon: 'fa-solid fa-gift',
-                title: '+91 91*** *3021',
-                action: 'Claimed Free Prediction Access!'
-            }
-
-        ];
-
-
-        let notifIndex = 0;
-
-        const toast = document.getElementById('toast-popup');
-        const toastBadge = document.getElementById('toast-badge');
-        const toastIconI = document.getElementById('toast-icon-i');
-        const toastUser = document.getElementById('toast-user');
-        const toastAction = document.getElementById('toast-action');
-
-
-        function showNotification() {
-
-            const data = notifications[notifIndex];
-
-            toastUser.textContent = data.title;
-            toastAction.textContent = data.action;
-
-            toastIconI.className = data.icon;
-
-            toastBadge.className =
-                'toast-icon ' + data.type;
-
-            toast.classList.add('show');
-
-            setTimeout(() => {
-                toast.classList.remove('show');
-            }, 3200);
-
-            notifIndex =
-                (notifIndex + 1) % notifications.length;
-        }
-
-
-        /* Start notifications */
-        setInterval(showNotification, 5500);
-
-        setTimeout(showNotification, 1500);
-
-
-        /* ==========================================
-           LIVE MEMBER COUNTER
-        ========================================== */
-
-        const liveCountEl =
-            document.getElementById('live-count');
-
-
-        setInterval(() => {
-
-            let current =
-                parseInt(
-                    liveCountEl.textContent.replace(/,/g, ''),
-                    10
-                );
-
-            let change =
-                Math.floor(Math.random() * 7) - 3;
-
-            current += change;
-
-            if (current < 1) {
-                current = 1;
-            }
-
-            liveCountEl.textContent =
-                current.toLocaleString('en-IN');
-
-        }, 3000);
 
     </script>
 
