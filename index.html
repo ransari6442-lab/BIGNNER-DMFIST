@@ -1,526 +1,371 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>BiggneRs Trade - Limited Offer Now</title>
+<title>BiggneRs Trade - Limited Offer Now</title>
+<meta name="description" content="BiggneRs Trade - Join our Telegram channel for updates and support.">
+<meta name="theme-color" content="#030d07">
 
-    <!-- Meta Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;
+n.push=n;
+n.loaded=!0;
+n.version='2.0';
+n.queue=[];
+t=b.createElement(e);
+t.async=!0;
+t.src=v;
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)
+}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
 
-    fbq('init', '2627682807688096');
-    fbq('track', 'PageView');
-    </script>
+fbq('init', '2627682807688096');
+fbq('track', 'PageView');
+</script>
 
-    <noscript>
-        <img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=2627682807688096&ev=PageView&noscript=1"/>
-    </noscript>
-    <!-- End Meta Pixel Code -->
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2627682807688096&ev=PageView&noscript=1"
+alt="">
+</noscript>
+<!-- End Meta Pixel Code -->
 
-    <!-- Google Fonts & Font Awesome -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap"
-          rel="stylesheet">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
 
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+body {
+    background-color: #030d07;
+    background-image:
+        radial-gradient(circle at 50% 0%, #0d381e 0%, transparent 75%),
+        radial-gradient(circle at 50% 100%, #051a0e 0%, transparent 80%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    padding: 15px 10px;
+}
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-            -webkit-tap-highlight-color: transparent;
-        }
+.card-container {
+    width: 100%;
+    max-width: 440px;
+    background: linear-gradient(165deg, #072213 0%, #031209 100%);
+    border: 2px solid #235435;
+    border-radius: 28px;
+    padding: 24px 18px;
+    box-shadow: 0 20px 50px rgba(0,0,0,.8),
+                0 0 25px rgba(16,185,129,.15);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
 
-        body {
-            background-color: #030d07;
-            background-image:
-                radial-gradient(circle at 50% 0%, #0d381e 0%, transparent 75%),
-                radial-gradient(circle at 50% 100%, #051a0e 0%, transparent 80%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #ffffff;
-            padding: 15px 10px;
-        }
+.card-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #fbbf24, transparent);
+}
 
-        /* Container Card */
-        .card-container {
-            width: 100%;
-            max-width: 440px;
-            background: linear-gradient(165deg, #072213 0%, #031209 100%);
-            border: 2px solid #235435;
-            border-radius: 28px;
-            padding: 24px 18px;
-            box-shadow:
-                0 20px 50px rgba(0, 0, 0, 0.8),
-                0 0 25px rgba(16, 185, 129, 0.15);
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
+.logo-box {
+    width: 72px;
+    height: 72px;
+    background: linear-gradient(135deg, #fff3d1 0%, #e2b245 50%, #996e13 100%);
+    border-radius: 18px;
+    margin: 0 auto 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    font-weight: 900;
+    color: #000;
+    box-shadow: 0 6px 18px rgba(0,0,0,.4),
+                inset 0 2px 4px rgba(255,255,255,.8);
+}
 
-        .card-container::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(
-                90deg,
-                transparent,
-                #fbbf24,
-                transparent
-            );
-        }
+.title {
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: -.5px;
+    margin-bottom: 8px;
+}
 
-        /* Logo Branding */
-        .logo-box {
-            width: 72px;
-            height: 72px;
-            background: linear-gradient(
-                135deg,
-                #fff3d1 0%,
-                #e2b245 50%,
-                #996e13 100%
-            );
-            border-radius: 18px;
-            margin: 0 auto 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 38px;
-            font-weight: 900;
-            color: #000;
-            box-shadow:
-                0 6px 18px rgba(0,0,0,0.4),
-                inset 0 2px 4px rgba(255,255,255,0.8);
-        }
+.title .gold {
+    color: #fcd34d;
+    text-shadow: 0 0 12px rgba(252,211,77,.3);
+}
 
-        .title {
-            font-size: 27px;
-            font-weight: 800;
-            letter-spacing: -0.5px;
-            margin-bottom: 8px;
-        }
+.title .white {
+    color: #f3f4f6;
+}
 
-        .title .gold {
-            color: #fcd34d;
-            text-shadow: 0 0 12px rgba(252, 211, 77, 0.3);
-        }
+.offer-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(239,68,68,.15);
+    border: 1px solid rgba(239,68,68,.4);
+    color: #ef4444;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    animation: pulse-border 2s infinite;
+}
 
-        .title .white {
-            color: #f3f4f6;
-        }
+@keyframes pulse-border {
+    0%,100% {
+        border-color: rgba(239,68,68,.4);
+        box-shadow: 0 0 0 rgba(239,68,68,0);
+    }
+    50% {
+        border-color: rgba(239,68,68,.8);
+        box-shadow: 0 0 10px rgba(239,68,68,.3);
+    }
+}
 
-        /* Limited Offer Tag */
-        .offer-tag {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background: rgba(239, 68, 68, 0.15);
-            border: 1px solid rgba(239, 68, 68, 0.4);
-            color: #ef4444;
-            padding: 4px 14px;
-            border-radius: 20px;
-            font-size: 11px;
-            font-weight: 800;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            margin-bottom: 14px;
-            animation: pulse-border 2s infinite;
-        }
+.pill-badge {
+    display: inline-block;
+    border: 1.5px solid #059669;
+    color: #34d399;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    background: rgba(5,150,105,.1);
+}
 
-        @keyframes pulse-border {
-            0%, 100% {
-                border-color: rgba(239, 68, 68, 0.4);
-                box-shadow: 0 0 0 rgba(239, 68, 68, 0);
-            }
+.hero-heading {
+    font-size: 21px;
+    font-weight: 900;
+    line-height: 1.25;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+}
 
-            50% {
-                border-color: rgba(239, 68, 68, 0.8);
-                box-shadow: 0 0 10px rgba(239, 68, 68, 0.3);
-            }
-        }
+.hero-heading .highlight {
+    color: #fbbf24;
+    text-shadow: 0 0 15px rgba(251,191,36,.4);
+}
 
-        .pill-badge {
-            display: inline-block;
-            border: 1.5px solid #059669;
-            color: #34d399;
-            padding: 5px 20px;
-            border-radius: 20px;
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            margin-bottom: 16px;
-            background: rgba(5, 150, 105, 0.1);
-        }
+.feature-card {
+    background: rgba(6,36,19,.7);
+    border: 1px solid #164e2a;
+    border-radius: 16px;
+    padding: 16px 12px;
+    margin-bottom: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: border-color .3s ease;
+}
 
-        /* Hero Text */
-        .hero-heading {
-            font-size: 21px;
-            font-weight: 900;
-            line-height: 1.25;
-            margin-bottom: 18px;
-            text-transform: uppercase;
-        }
+.feature-card:hover {
+    border-color: #10b981;
+}
 
-        .hero-heading .highlight {
-            color: #fbbf24;
-            text-shadow: 0 0 15px rgba(251, 191, 36, 0.4);
-        }
+.feature-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+}
 
-        /* Feature Card Box */
-        .feature-card {
-            background: rgba(6, 36, 19, 0.7);
-            border: 1px solid #164e2a;
-            border-radius: 16px;
-            padding: 16px 12px;
-            margin-bottom: 22px;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            text-decoration: none;
-            transition: border-color 0.3s ease;
-        }
+.feature-item i {
+    font-size: 18px;
+}
 
-        .feature-card:hover {
-            border-color: #10b981;
-        }
+.icon-live { color: #60a5fa; }
+.icon-cash { color: #fbbf24; }
+.icon-gift { color: #f87171; }
 
-        .feature-item {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            font-size: 15px;
-            font-weight: 700;
-            color: #ffffff;
-        }
+.btn-red-animated {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    background: linear-gradient(135deg, #ff1a1a 0%, #e60000 50%, #990000 100%);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+    text-decoration: none;
+    padding: 16px 10px;
+    border-radius: 40px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    box-shadow: 0 8px 25px rgba(230,0,0,.5),
+                inset 0 2px 2px rgba(255,255,255,.4);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ff6666;
+    animation: pulse-red 1.5s infinite alternate;
+}
 
-        .feature-item i {
-            font-size: 18px;
-        }
+.btn-red-animated::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 40%;
+    height: 200%;
+    background: rgba(255,255,255,.35);
+    transform: rotate(25deg);
+    animation: shimmer 2.2s infinite;
+}
 
-        .icon-live {
-            color: #60a5fa;
-        }
+@keyframes shimmer {
+    0% { left: -60%; }
+    100% { left: 140%; }
+}
 
-        .icon-cash {
-            color: #fbbf24;
-        }
+@keyframes pulse-red {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 6px 20px rgba(230,0,0,.5);
+    }
+    100% {
+        transform: scale(1.03);
+        box-shadow: 0 12px 30px rgba(255,0,0,.8),
+                    0 0 15px rgba(255,50,50,.6);
+    }
+}
 
-        .icon-gift {
-            color: #f87171;
-        }
+.btn-red-animated i {
+    font-size: 20px;
+    animation: plane-bounce 1s infinite alternate;
+}
 
-        /* Animated Red Telegram Button */
-        .btn-red-animated {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            width: 100%;
-            background: linear-gradient(
-                135deg,
-                #ff1a1a 0%,
-                #e60000 50%,
-                #990000 100%
-            );
-            color: #ffffff;
-            font-size: 18px;
-            font-weight: 900;
-            text-decoration: none;
-            padding: 16px 10px;
-            border-radius: 40px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            box-shadow:
-                0 8px 25px rgba(230, 0, 0, 0.5),
-                inset 0 2px 2px rgba(255,255,255,0.4);
-            position: relative;
-            overflow: hidden;
-            border: 1px solid #ff6666;
-            animation: pulse-red 1.5s infinite alternate;
-        }
+@keyframes plane-bounce {
+    0% { transform: translateY(0) translateX(0); }
+    100% { transform: translateY(-3px) translateX(3px); }
+}
 
-        .btn-red-animated::after {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -60%;
-            width: 40%;
-            height: 200%;
-            background: rgba(255, 255, 255, 0.35);
-            transform: rotate(25deg);
-            animation: shimmer 2.2s infinite;
-        }
+@media (max-width: 480px) {
+    body { padding: 10px 8px; }
 
-        @keyframes shimmer {
-            0% {
-                left: -60%;
-            }
+    .card-container {
+        padding: 22px 15px;
+        border-radius: 24px;
+    }
 
-            100% {
-                left: 140%;
-            }
-        }
+    .title { font-size: 25px; }
+    .hero-heading { font-size: 19px; }
+    .btn-red-animated { font-size: 17px; }
+}
 
-        @keyframes pulse-red {
-            0% {
-                transform: scale(1);
-                box-shadow: 0 6px 20px rgba(230, 0, 0, 0.5);
-            }
-
-            100% {
-                transform: scale(1.03);
-                box-shadow:
-                    0 12px 30px rgba(255, 0, 0, 0.8),
-                    0 0 15px rgba(255, 50, 50, 0.6);
-            }
-        }
-
-        .btn-red-animated i {
-            font-size: 20px;
-            animation: plane-bounce 1s infinite alternate;
-        }
-
-        @keyframes plane-bounce {
-            0% {
-                transform: translateY(0) translateX(0);
-            }
-
-            100% {
-                transform: translateY(-3px) translateX(3px);
-            }
-        }
-
-        /* Member Count Indicator */
-        .members-online {
-            margin-top: 14px;
-            font-size: 11px;
-            color: #9ca3af;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 6px;
-        }
-
-        .green-dot {
-            width: 8px;
-            height: 8px;
-            background-color: #10b981;
-            border-radius: 50%;
-            box-shadow: 0 0 8px #10b981;
-            animation: blink 1s infinite;
-        }
-
-        @keyframes blink {
-            50% {
-                opacity: 0.3;
-            }
-        }
-
-        /* Dynamic Popups */
-        .toast-notification {
-            position: fixed;
-            bottom: 15px;
-            left: 50%;
-            transform: translateX(-50%) translateY(100px);
-            background: rgba(10, 25, 16, 0.95);
-            border: 1px solid #10b981;
-            backdrop-filter: blur(8px);
-            padding: 10px 16px;
-            border-radius: 30px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.6);
-            transition:
-                all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            opacity: 0;
-            z-index: 999;
-            width: 90%;
-            max-width: 360px;
-        }
-
-        .toast-notification.show {
-            transform: translateX(-50%) translateY(0);
-            opacity: 1;
-        }
-
-        .toast-icon {
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 14px;
-            color: #fff;
-            flex-shrink: 0;
-        }
-
-        .toast-icon.telegram {
-            background: #229ed9;
-        }
-
-        .toast-icon.phone {
-            background: #f59e0b;
-        }
-
-        .toast-icon.gift {
-            background: #ef4444;
-        }
-
-        .toast-content {
-            text-align: left;
-            font-size: 11px;
-            line-height: 1.3;
-        }
-
-        .toast-title {
-            font-weight: 700;
-            color: #fff;
-        }
-
-        .toast-desc {
-            color: #10b981;
-            font-weight: 600;
-        }
-
-        /* Mobile */
-        @media (max-width: 480px) {
-            body {
-                padding: 10px 8px;
-            }
-
-            .card-container {
-                padding: 22px 15px;
-                border-radius: 24px;
-            }
-
-            .title {
-                font-size: 25px;
-            }
-
-            .hero-heading {
-                font-size: 19px;
-            }
-
-            .btn-red-animated {
-                font-size: 17px;
-            }
-        }
-    </style>
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+    }
+}
+</style>
 </head>
 
 <body>
 
-    <!-- Main Card Container -->
-    <div class="card-container">
+<div class="card-container">
 
-        <!-- Logo -->
-        <div class="logo-box">B</div>
+    <div class="logo-box">B</div>
 
-        <!-- Title -->
-        <h1 class="title">
-            <span class="gold">BiggneRs</span>
-            <span class="white">Trade</span>
-        </h1>
+    <h1 class="title">
+        <span class="gold">BiggneRs</span>
+        <span class="white">Trade</span>
+    </h1>
 
-        <!-- Limited Offer -->
-        <div>
-            <span class="offer-tag">
-                <i class="fa-solid fa-fire"></i>
-                Limited Offer Now
-                <i class="fa-solid fa-fire"></i>
-            </span>
-        </div>
-
-        <!-- Support Badge -->
-        <div>
-            <span class="pill-badge">LIVE SUPPORT</span>
-        </div>
-
-        <!-- Main Headline -->
-        <h2 class="hero-heading">
-            BEST <span class="highlight">PREDICTION</span> ON LIVE
-        </h2>
-
-        <!-- Feature List -->
-        <div class="feature-card">
-
-            <div class="feature-item">
-                <i class="fa-solid fa-comments icon-live"></i>
-                <span>Live Support</span>
-            </div>
-
-            <div class="feature-item">
-                <i class="fa-solid fa-sack-dollar icon-cash"></i>
-                <span>Cashback Offer</span>
-            </div>
-
-            <div class="feature-item">
-                <i class="fa-solid fa-gift icon-gift"></i>
-                <span>Gift Code</span>
-            </div>
-
-        </div>
-
-        <!-- Red Animated Telegram Button -->
-        <!-- Subscribe event tracked on click -->
-        <a href="https://t.me/+khjZCyvU7QVkNzk9"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="btn-red-animated"
-           onclick="trackSubscribe(event)">
-
-            <i class="fa-solid fa-paper-plane"></i>
-            JOIN TELEGRAM
-
-        </a>
-
+    <div>
+        <span class="offer-tag">
+            <i class="fa-solid fa-fire"></i>
+            Limited Offer Now
+            <i class="fa-solid fa-fire"></i>
+        </span>
     </div>
 
-    <script>
-        /* ==========================================
-           META PIXEL - SUBSCRIBE TRACKING
-        ========================================== */
+    <div>
+        <span class="pill-badge">LIVE SUPPORT</span>
+    </div>
 
-        function trackSubscribe(event) {
+    <h2 class="hero-heading">
+        BEST <span class="highlight">PREDICTION</span> ON LIVE
+    </h2>
 
-            /*
-             * Send Subscribe event to Meta Pixel
-             */
-            if (typeof fbq === 'function') {
-                fbq('track', 'Subscribe');
-            }
+    <div class="feature-card">
+        <div class="feature-item">
+            <i class="fa-solid fa-comments icon-live"></i>
+            <span>Live Support</span>
+        </div>
 
-            /*
-             * Do not block the Telegram link.
-             * The user is sent to Telegram normally.
-             */
-        }
+        <div class="feature-item">
+            <i class="fa-solid fa-sack-dollar icon-cash"></i>
+            <span>Cashback Offer</span>
+        </div>
 
+        <div class="feature-item">
+            <i class="fa-solid fa-gift icon-gift"></i>
+            <span>Gift Code</span>
+        </div>
+    </div>
 
-    </script>
+    <a href="https://t.me/+khjZCyvU7QVkNzk9"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="btn-red-animated"
+       onclick="trackSubscribe(event)">
+
+        <i class="fa-solid fa-paper-plane"></i>
+        JOIN TELEGRAM
+    </a>
+
+</div>
+
+<script>
+/*
+  Meta Pixel Subscribe event.
+  Replace 9.99 with the genuine monetary value
+  associated with this event, if applicable.
+*/
+function trackSubscribe(event) {
+    if (typeof window.fbq === 'function') {
+        window.fbq('track', 'Subscribe', {
+            value: 9.99,
+            currency: 'INR'
+        });
+    }
+}
+</script>
 
 </body>
 </html>
+```
